@@ -49,6 +49,7 @@
 </PreferenceCategory>
 <PreferenceCategory android:title="@string/pref_interface_label">
     <CheckBoxPreference android:key="view_needPE" android:title="@string/pref_interface_label_needPE" android:defaultValue="true" android:summary="@string/pref_interface_desc_needPE"/>
+    <SwitchPreference android:switchTextOn="lal1" android:summaryOn="lal" android:summaryOff="azaz" android:switchTextOff="azaz1"/>
 </PreferenceCategory>
 
 
