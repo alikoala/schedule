@@ -62,6 +62,7 @@
         <item >Google</item>
         <item >Vinous</item>
     </string-array>
+    <!-- LOL-->
     
     <string name="title_activity_other">OtherActivity</string>
     <string name="hello_world">Hello world!</string>
