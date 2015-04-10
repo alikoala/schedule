@@ -18,7 +18,7 @@
         android:killAfterRestore="true"
         android:label="@string/app_name"
         android:testOnly="false"
-        android:theme="@style/AppTheme" >
+        android:theme="@style/ThemeGoogle" >
         <activity
             android:name="ru.vasilek.schedule.MainActivity"
             android:label="@string/app_name" >

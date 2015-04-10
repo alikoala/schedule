@@ -31,7 +31,7 @@
     
     <style name="ActionBarGoogle"
            parent="@android:style/Widget.Holo.Light.ActionBar.Solid.Inverse">
-        <item name="android:background">@color/Color1</item>
+        <item name="android:background">@color/ColorGoogle1</item>
     </style>
     
     <style name="ButtonStyleGoogle">

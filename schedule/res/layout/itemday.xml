@@ -15,7 +15,7 @@
 		    android:textAlignment="center"
 		    android:text=""
 		    android:textStyle="bold"
-		    android:textColor="@color/Color1"
+		    android:textColor="@color/ColorGoogle1"
 		    android:textSize="28sp" >
 
 	</TextView>
