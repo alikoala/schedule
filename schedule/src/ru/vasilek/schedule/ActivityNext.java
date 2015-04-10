@@ -125,6 +125,8 @@ public class ActivityNext extends Activity{
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
+		settings = PreferenceManager.getDefaultSharedPreferences(getBaseContext());
+        setTheme(tools.getTheme(settings, getApplicationContext()));
 		setContentView(R.layout.activity_next);
 		
 		Log.d(MyTag,"NextActivity Runned");
@@ -140,7 +142,6 @@ public class ActivityNext extends Activity{
         main = (LinearLayout) findViewById(R.id.next_mainlayout);
         dbHelper = new DBHelper(this);
 		db = dbHelper.getWritableDatabase();
-		settings = PreferenceManager.getDefaultSharedPreferences(this);
 		needPE = settings.getBoolean(MyPreferenceActivity.SETTINGS_INTERFACE_NEEDPE, true);
         getInfo();
 	}

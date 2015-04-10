@@ -143,6 +143,9 @@ public class ActivitySchedule extends Activity implements OnClickListener {
 	protected void onCreate(Bundle savedInstanceState) {
 		// TODO Auto-generated method stub
 		super.onCreate(savedInstanceState);
+		settings = PreferenceManager.getDefaultSharedPreferences(getBaseContext());
+        setTheme(tools.getTheme(settings, getApplicationContext()));
+		
 		setContentView(R.layout.activity_schedule);
 //		tv = (TextView) findViewById(R.id.schedule_textview1);
 //		tv.setMovementMethod(new ScrollingMovementMethod());
@@ -169,7 +172,6 @@ public class ActivitySchedule extends Activity implements OnClickListener {
         };
         dbHelper = new DBHelper(this);
 		db = dbHelper.getWritableDatabase();
-		settings = PreferenceManager.getDefaultSharedPreferences(this);
 		needPE = settings.getBoolean(MyPreferenceActivity.SETTINGS_INTERFACE_NEEDPE, true);
         getInfo();
   

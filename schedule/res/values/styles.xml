@@ -18,6 +18,11 @@
         <!-- All customizations that are NOT specific to a particular API-level can go here. -->
         <item name="android:actionBarStyle">@style/ActionBarGoogle</item>
     </style>
+    
+    <style name="ThemeVinous" parent="AppBaseTheme">
+        <!-- All customizations that are NOT specific to a particular API-level can go here. -->
+        <item name="android:actionBarStyle">@style/ActionBarVinous</item>
+    </style>
 <!--     Color1, Color2 ==== #380605, #330100 -->
 <!-- Goolge C1, C2 === #4A8BF4, #3475DE -->
 

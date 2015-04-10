@@ -21,6 +21,24 @@ import android.util.Log;
 public class tools {
 	public static String MyTag = "tools_LOG";
 	public static String imagefolder = "file:///data/data/ru.vasilek.schedule/files/";
+	
+	public static int getTheme(SharedPreferences arg0, Context ctx){
+		String strtheme = arg0.getString(MyPreferenceActivity.SETTINGS_INTERFACE_THEME, "");
+		int theme = ctx.getResources().getIdentifier("Theme"+strtheme, "style", ctx.getPackageName());
+		return theme;
+	}
+	
+	public static int getTheme2(SharedPreferences arg0, Context ctx){
+		String strtheme = arg0.getString(MyPreferenceActivity.SETTINGS_INTERFACE_THEME, "");
+		int theme = 0;
+		if (strtheme == "ThemeVinous"){
+			theme = R.style.ThemeGoogle;
+		} else if (strtheme == "ThemeGoogle"){
+			theme = R.style.ThemeGoogle;
+		}
+		return theme;
+	}
+	
 	public static String getDeviceName() {
 	    String manufacturer = Build.MANUFACTURER;
 	    String model = Build.MODEL;

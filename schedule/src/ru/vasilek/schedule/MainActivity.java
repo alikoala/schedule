@@ -34,7 +34,7 @@ import android.widget.RelativeLayout;
 import android.widget.TextView;
 import android.widget.Toast;
 
-public class MainActivity extends Activity implements OnClickListener, OnSharedPreferenceChangeListener {
+public class MainActivity extends Activity implements OnClickListener{
 	private static final int MENU_SITE = 0;
 	private static final int MENU_SETTINGS = 1;	
 	private static final int MENU_EXIT = 2;	
@@ -70,7 +70,9 @@ public class MainActivity extends Activity implements OnClickListener, OnSharedP
 	}
     
     protected void onCreate(Bundle savedInstanceState) {
-        super.onCreate(savedInstanceState);
+        super.onCreate(savedInstanceState);  
+        settings = PreferenceManager.getDefaultSharedPreferences(getBaseContext());
+        setTheme(tools.getTheme(settings, getApplicationContext()));
         setContentView(R.layout.activity_main);
         b1 = (Button) findViewById(R.id.button1);
         b1.setOnClickListener(this);
@@ -78,8 +80,7 @@ public class MainActivity extends Activity implements OnClickListener, OnSharedP
         b2.setOnClickListener(this);
         image1 = (ImageView) findViewById(R.id.imageView1);
         image1.setOnClickListener(this);
-        settings = PreferenceManager.getDefaultSharedPreferences(getBaseContext());
-        settings.registerOnSharedPreferenceChangeListener(this);
+        
         Log.d(MyTag, "MainActivity Create");
         long lastupdate = settings.getLong(MyPreferenceActivity.SETTINGS_LAST_UPDATE, 0);
         h = new Handler(){
@@ -181,14 +182,6 @@ public class MainActivity extends Activity implements OnClickListener, OnSharedP
 			}
 		
 		}
-	}
-
-	@Override
-	public void onSharedPreferenceChanged(SharedPreferences arg0, String arg1) {
-		settings = arg0;
-		String strtheme = arg0.getString(MyPreferenceActivity.SETTINGS_INTERFACE_THEME, "");
-		int theme = getResources().getIdentifier(strtheme, "style", "");
-		setTheme(theme);
 	}
     
 }

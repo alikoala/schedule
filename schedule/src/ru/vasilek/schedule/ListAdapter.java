@@ -5,6 +5,7 @@ import java.util.ArrayList;
 import android.R.color;
 import android.content.Context;
 import android.content.res.Resources;
+import android.content.res.Resources.Theme;
 import android.graphics.Bitmap;
 import android.graphics.Color;
 import android.graphics.Rect;
@@ -89,6 +90,9 @@ public class ListAdapter extends BaseAdapter {
 	    	Log.d(Log_Tag, "4");
 	    	TextView tv1 = (TextView) view.findViewById(R.id.lvDayName);
 		    tv1.setText(tools.dayName(it.day));
+		    rs = ctx.getResources();
+//		    int col = rs.getIdentifier("Color"+th+"1", "color", ctx.getPackageName());
+//		    tv1.setTextColor(rs.getColor(col));
 	    }
 	    Log.d(Log_Tag, "5");
 	    return view;
