@@ -19,6 +19,7 @@ import android.content.Context;
 import android.content.Intent;
 import android.content.SharedPreferences;
 import android.content.SharedPreferences.Editor;
+import android.content.SharedPreferences.OnSharedPreferenceChangeListener;
 import android.util.Log;
 import android.view.KeyEvent;
 import android.view.Menu;
@@ -33,7 +34,7 @@ import android.widget.RelativeLayout;
 import android.widget.TextView;
 import android.widget.Toast;
 
-public class MainActivity extends Activity implements OnClickListener {
+public class MainActivity extends Activity implements OnClickListener, OnSharedPreferenceChangeListener {
 	private static final int MENU_SITE = 0;
 	private static final int MENU_SETTINGS = 1;	
 	private static final int MENU_EXIT = 2;	
@@ -78,6 +79,7 @@ public class MainActivity extends Activity implements OnClickListener {
         image1 = (ImageView) findViewById(R.id.imageView1);
         image1.setOnClickListener(this);
         settings = PreferenceManager.getDefaultSharedPreferences(getBaseContext());
+        settings.registerOnSharedPreferenceChangeListener(this);
         Log.d(MyTag, "MainActivity Create");
         long lastupdate = settings.getLong(MyPreferenceActivity.SETTINGS_LAST_UPDATE, 0);
         h = new Handler(){
@@ -179,6 +181,13 @@ public class MainActivity extends Activity implements OnClickListener {
 			}
 		
 		}
+	}
+
+	@Override
+	public void onSharedPreferenceChanged(SharedPreferences arg0, String arg1) {
+		settings = arg0;
+		int theme = getResources().getIdentifier(arg0.getString("", ""), defType, defPackage)
+		setTheme(theme);
 	}
     
 }

@@ -21,13 +21,13 @@
 <!--     Color1, Color2 ==== #380605, #330100 -->
 <!-- Goolge C1, C2 === #4A8BF4, #3475DE -->
 
-    <color name="ColorVinous1">#4A8BF4</color>
-    <color name="ColorVinous2">#3475DE</color>
-    <color name="ColorVinousText">#000000</color>
+    <color name="ColorGoogle1">#4A8BF4</color>
+    <color name="ColorGoogle2">#3475DE</color>
+    <color name="ColorGoogleText">#000000</color>
     
-    <color name="ColorGoogle1">#380605</color>
-    <color name="ColorGoogle2">#330100</color>
-    <color name="ColorGoogleText">#FFFFFF</color>
+    <color name="ColorVinous1">#380605</color>
+    <color name="ColorVinous2">#330100</color>
+    <color name="ColorVinousText">#FFFFFF</color>
     
     <style name="ActionBarGoogle"
            parent="@android:style/Widget.Holo.Light.ActionBar.Solid.Inverse">
@@ -37,6 +37,16 @@
     <style name="ButtonStyleGoogle">
         <item name="android:background">@drawable/buttonstylegoogle</item>
     	<item name="android:textColor">@color/ColorGoogleText</item>
+    </style>
+    
+    <style name="ActionBarVinous"
+           parent="@android:style/Widget.Holo.Light.ActionBar.Solid.Inverse">
+        <item name="android:background">@color/ColorVinous1</item>
+    </style>
+    
+    <style name="ButtonStyleVinous">
+        <item name="android:background">@drawable/buttonstylevinous</item>
+    	<item name="android:textColor">@color/ColorVinousText</item>
     </style>
 </resources>
 

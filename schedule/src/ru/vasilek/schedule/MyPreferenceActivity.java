@@ -1,9 +1,11 @@
 package ru.vasilek.schedule;
 
 import android.os.Bundle;
+import android.preference.Preference;
+import android.preference.Preference.OnPreferenceChangeListener;
 import android.preference.PreferenceActivity;
 
-public class MyPreferenceActivity extends PreferenceActivity {
+public class MyPreferenceActivity extends PreferenceActivity{
 
 	public static String SETTINGS_CACHE_EXIST = "cache_exist";
 	public static String SETTINGS_CACHE_AUTO = "cache_auto";
@@ -21,6 +23,7 @@ public class MyPreferenceActivity extends PreferenceActivity {
 		// TODO Auto-generated method stub
 		super.onCreate(savedInstanceState);
 		addPreferencesFromResource(R.xml.activity_preferences);
+		
 		
 	}
 
