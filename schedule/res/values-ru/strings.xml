@@ -64,7 +64,5 @@
         <item >Бордовая</item>
     </string-array>
 
-    <string name="title_activity_other">OtherActivity</string>
-    <string name="hello_world">Hello world!</string>
 
 </resources>
