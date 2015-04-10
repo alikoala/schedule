@@ -9,7 +9,7 @@
     <string name="week">Schedule for the week</string>
     <string name="back">Back</string>
     <string name="forward">Next</string>
-    
+    <string name="data_updated">Data received</string>
 
     <string name="pref_label">Preferences</string>
     <string name="pref_notify_label">Notifications</string>
