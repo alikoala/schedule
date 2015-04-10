@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen
+ xmlns:android="http://schemas.android.com/apk/res/android">
+<PreferenceCategory android:title="@string/pref_notify_label">
+<CheckBoxPreference 
+    android:key="notifications_on" 
+    android:title="@string/pref_notify_label_on" 
+    android:defaultValue="true">
+</CheckBoxPreference>
+<ListPreference 
+    android:entries="@array/notifications_time_desc" 
+    android:entryValues="@array/notifications_time" 
+    android:key="notifications_time" 
+    android:title="@string/pref_notify_label_time" 
+    android:dependency="notifications_on" 
+    android:defaultValue="10"/>
+<RingtonePreference 
+    android:title="@string/pref_notify_label_sound" 
+    android:ringtoneType="notification" 
+    android:key="notifications_sound" 
+    android:dependency="notifications_on"
+    android:defaultValue="content://settings/system/notification_sound"
+    android:showDefault="true" 
+    android:showSilent="true"/>
+<CheckBoxPreference 
+    android:key="notifications_vibration" 
+    android:title="@string/pref_notify_label_vibro" 
+    android:defaultValue="true" 
+    android:dependency="notifications_on"
+/>
+
+<CheckBoxPreference 
+    android:dependency="notifications_on" 
+    android:key="notifications_update" 
+    android:title="@string/pref_notify_label_ondata"/>
+
+</PreferenceCategory><PreferenceCategory android:title="@string/pref_cache_label">
+    <CheckBoxPreference 
+        android:key="cache_auto" 
+        android:title="@string/pref_cache_label_auto" 
+        android:defaultValue="true"/>
+    <ListPreference 
+        android:entries="@array/update_time_desc" 
+        android:entryValues="@array/update_time" 
+        android:key="cache_update_time" 
+        android:dependency="cache_auto" 
+        android:title="@string/pref_cache_label_time" 
+        android:defaultValue="1"/>
+</PreferenceCategory>
+<PreferenceCategory android:title="@string/pref_interface_label">
+    <CheckBoxPreference android:key="view_needPE" android:title="@string/pref_interface_label_needPE" android:defaultValue="true" android:summary="@string/pref_interface_desc_needPE"/>
+</PreferenceCategory>
+
+
+</PreferenceScreen>

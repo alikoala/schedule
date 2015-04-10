@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">Schedule</string>
+    <string name="nextlesson">Next Lesson</string>
+    <string name="currentLesson">Now</string>
+    <string name="nolessons">There are currently no classes</string>
+    <string name="today">Schedule today</string>
+    <string name="week">Schedule for the week</string>
+    <string name="back">Back</string>
+    <string name="forward">Next</string>
+    
+
+    <string name="pref_label">Preferences</string>
+    <string name="pref_notify_label">Notifications</string>
+	<string name="pref_notify_label_on">On notifications</string>
+	<string name="pref_notify_label_time">Notifications time</string>
+	<string name="pref_notify_label_sound">Sound</string>
+	<string name="pref_notify_label_vibro">Vibration</string>
+	<string name="pref_notify_label_ondata">Notify about download data</string>
+	<string name="pref_cache_label">Cache</string>
+	<string name="pref_cache_label_auto">Auto Update</string>
+	<string name="pref_cache_label_time">Updating time</string>
+	<string name="pref_interface_label">Interface</string>
+	<string name="pref_interface_label_needPE">Physical education</string>
+	<string name="pref_interface_desc_needPE">Show Physical education</string>
+    
+	<string name="menu_label_exit">Exit</string>
+	<string name="menu_label_site">Open site</string>
+	<string name="menu_label_preferences">Preferences</string>
+
+    <string-array name="notifications_time_desc">
+        <item>За 10 минут</item>
+        <item>За 5 минут</item>
+        <item>За 30 минут</item>
+        <item>За 1 час</item>
+    </string-array>
+    <string-array name="notifications_time">
+        <item>10</item>
+        <item>5</item>
+        <item>30</item>
+        <item>60</item>
+    </string-array>
+    <string-array name="update_time_desc">
+        <item>Каждую неделю</item>
+        <item>Каждый день</item>
+        <item>Каждые 6 часов</item>
+        <item>Каждый час</item>
+    </string-array>
+    <string-array name="update_time">
+        <item>168</item>
+        <item>24</item>
+        <item>6</item>
+        <item>1</item>
+    </string-array>
+
+    <string name="title_activity_other">OtherActivity</string>
+    <string name="hello_world">Hello world!</string>
+
+</resources>

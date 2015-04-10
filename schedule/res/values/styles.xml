@@ -1,0 +1,41 @@
+<resources xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <!--
+        Base application theme, dependent on API level. This theme is replaced
+        by AppBaseTheme from res/values-vXX/styles.xml on newer devices.
+    -->
+    <style name="AppBaseTheme" parent="android:Theme.Light">
+        <!--
+            Theme customizations available in newer API levels can go in
+            res/values-vXX/styles.xml, while customizations related to
+            backward-compatibility can go here.
+        -->
+    </style>
+    
+
+    <!-- Application theme. -->
+    <style name="AppTheme" parent="AppBaseTheme">
+        <!-- All customizations that are NOT specific to a particular API-level can go here. -->
+        <item name="android:actionBarStyle">@style/MyActionBar</item>
+    </style>
+<!--     Color1, Color2 ==== #380605, #330100 -->
+<!-- Goolge C1, C2 === #4A8BF4, #3475DE -->
+<!--     <color name="Color1">#4A8BF4</color> -->
+<!--     <color name="Color2">#3475DE</color> -->
+<!--     <color name="TextColor">#000000</color> -->
+    
+    <color name="Color1">#380605</color>
+    <color name="Color2">#330100</color>
+    <color name="TextColor">#FFFFFF</color>
+    
+    <style name="MyActionBar"
+           parent="@android:style/Widget.Holo.Light.ActionBar.Solid.Inverse">
+        <item name="android:background">@color/Color1</item>
+    </style>
+    
+    <style name="ButtonStyle">
+        <item name="android:background">@drawable/buttonstyle</item>
+    	<item name="android:textColor">@color/TextColor</item>
+    </style>
+</resources>
+
