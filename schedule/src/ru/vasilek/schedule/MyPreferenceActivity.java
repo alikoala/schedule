@@ -15,8 +15,8 @@ public class MyPreferenceActivity extends PreferenceActivity{
 	public static String SETTINGS_NOTIFICATIONS_SOUND = "notifications_sound";
 	public static String SETTINGS_NOTIFICATIONS_VIBRATION = "notifications_vibration";
 	public static String SETTINGS_LAST_UPDATE = "lastupdate";
-	public static String SETTINGS_VIEW_NEEDPE = "view_needPE";
-	
+	public static String SETTINGS_INTERFACE_NEEDPE = "interface_needPE";
+	public static String SETTINGS_INTERFACE_THEME = "interface_theme";
 	@SuppressWarnings("deprecation")
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {

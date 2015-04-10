@@ -47,9 +47,18 @@
         android:title="@string/pref_cache_label_time" 
         android:defaultValue="1"/>
 </PreferenceCategory>
+
 <PreferenceCategory android:title="@string/pref_interface_label">
-    <CheckBoxPreference android:key="view_needPE" android:title="@string/pref_interface_label_needPE" android:defaultValue="true" android:summary="@string/pref_interface_desc_needPE"/>
-    <ListPreference />
+    <CheckBoxPreference 
+        android:key="interface_needPE" 
+        android:title="@string/pref_interface_label_needPE" 
+        android:defaultValue="true" 
+        android:summary="@string/pref_interface_desc_needPE"/>
+    <ListPreference android:entryValues="@array/interface_theme_values" 
+        android:entries="@array/interface_theme_label" 
+        android:key="interface_theme" 
+        android:title="@string/pref_interface_label_theme" 
+        android:defaultValue="ThemeGoogle"/>
 </PreferenceCategory>
 
 

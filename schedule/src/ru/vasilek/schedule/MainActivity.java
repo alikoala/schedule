@@ -186,7 +186,8 @@ public class MainActivity extends Activity implements OnClickListener, OnSharedP
 	@Override
 	public void onSharedPreferenceChanged(SharedPreferences arg0, String arg1) {
 		settings = arg0;
-		int theme = getResources().getIdentifier(arg0.getString("", ""), defType, defPackage)
+		String strtheme = arg0.getString(MyPreferenceActivity.SETTINGS_INTERFACE_THEME, "");
+		int theme = getResources().getIdentifier(strtheme, "style", "");
 		setTheme(theme);
 	}
     

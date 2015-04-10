@@ -141,7 +141,7 @@ public class ActivityNext extends Activity{
         dbHelper = new DBHelper(this);
 		db = dbHelper.getWritableDatabase();
 		settings = PreferenceManager.getDefaultSharedPreferences(this);
-		needPE = settings.getBoolean(MyPreferenceActivity.SETTINGS_VIEW_NEEDPE, true);
+		needPE = settings.getBoolean(MyPreferenceActivity.SETTINGS_INTERFACE_NEEDPE, true);
         getInfo();
 	}
 
