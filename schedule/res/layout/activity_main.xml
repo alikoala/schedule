@@ -19,8 +19,7 @@
 
     <Button
         android:id="@+id/button1"
-        android:background="@drawable/buttonstyle"
-        android:textColor="@color/TextColor"
+        android:background="@drawable/buttonstylegoogle"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_alignLeft="@+id/buttonweek"
@@ -32,8 +31,7 @@
 
     <Button
         android:id="@+id/buttonweek"
-        android:background="@drawable/buttonstyle"
-        android:textColor="@color/TextColor"
+        android:background="@drawable/buttonstylegoogle"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_below="@+id/button1"

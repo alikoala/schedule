@@ -14,28 +14,29 @@
     
 
     <!-- Application theme. -->
-    <style name="AppTheme" parent="AppBaseTheme">
+    <style name="ThemeGoogle" parent="AppBaseTheme">
         <!-- All customizations that are NOT specific to a particular API-level can go here. -->
-        <item name="android:actionBarStyle">@style/MyActionBar</item>
+        <item name="android:actionBarStyle">@style/ActionBarGoogle</item>
     </style>
 <!--     Color1, Color2 ==== #380605, #330100 -->
 <!-- Goolge C1, C2 === #4A8BF4, #3475DE -->
-<!--     <color name="Color1">#4A8BF4</color> -->
-<!--     <color name="Color2">#3475DE</color> -->
-<!--     <color name="TextColor">#000000</color> -->
+
+    <color name="ColorVinous1">#4A8BF4</color>
+    <color name="ColorVinous2">#3475DE</color>
+    <color name="ColorVinousText">#000000</color>
     
-    <color name="Color1">#380605</color>
-    <color name="Color2">#330100</color>
-    <color name="TextColor">#FFFFFF</color>
+    <color name="ColorGoogle1">#380605</color>
+    <color name="ColorGoogle2">#330100</color>
+    <color name="ColorGoogleText">#FFFFFF</color>
     
-    <style name="MyActionBar"
+    <style name="ActionBarGoogle"
            parent="@android:style/Widget.Holo.Light.ActionBar.Solid.Inverse">
         <item name="android:background">@color/Color1</item>
     </style>
     
-    <style name="ButtonStyle">
-        <item name="android:background">@drawable/buttonstyle</item>
-    	<item name="android:textColor">@color/TextColor</item>
+    <style name="ButtonStyleGoogle">
+        <item name="android:background">@drawable/buttonstylegoogle</item>
+    	<item name="android:textColor">@color/ColorGoogleText</item>
     </style>
 </resources>
 
